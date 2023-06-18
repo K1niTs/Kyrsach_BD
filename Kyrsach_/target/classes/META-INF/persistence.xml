@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_3_0.xsd"
+             version="2.2">
+    <persistence-unit name="persistence">
+
+        <class>tables.BuyingEntity</class>
+        <class>tables.CarsEntity</class>
+        <class>tables.DriversEntity</class>
+        <class>tables.HeaddressEntity</class>
+        <class>tables.JeansEntity</class>
+        <class>tables.ShoesEntity</class>
+        <class>tables.SocksEntity</class>
+        <class>tables.TovarEntity</class>
+        <class>tables.UserDataEntity</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/kyrsach"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="postgres"/>
+            <property name="javax.persistence.jdbc.password" value="postgres"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
